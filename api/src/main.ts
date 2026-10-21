@@ -9,6 +9,6 @@ async function bootstrap() {
   const port = Number(process.env.PORT ?? 3001);
   // 127.0.0.1: só o nginx (na mesma máquina) alcança a API. Ninguém de fora bate direto na porta.
   await app.listen(port, '127.0.0.1');
-  console.log(`atlas-api no ar em http://127.0.0.1:${port}/api`);
+  console.log(`testando as mudanças em http://127.0.0.1:${port}/api`);
 }
 bootstrap();
